@@ -1,0 +1,9 @@
+function sortString(str) {
+
+    return str.split('').sort().join('');
+}
+
+
+const inputString = "Baku";
+const sorted = sortString(inputString);
+console.log(sorted);  

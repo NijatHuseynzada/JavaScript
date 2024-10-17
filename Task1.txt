@@ -1,0 +1,29 @@
+
+const fullName = prompt("Please enter your full name:");
+
+
+const courseGrade = parseFloat(prompt("Please enter your course grade:"));
+
+alert(`Hello, ${fullName}!`);
+
+if (courseGrade >= 50) {
+    alert("Congratulations, you passed the course!");
+
+    let letterGrade;
+    if (courseGrade >= 90) {
+        letterGrade = "A";
+    } else if (courseGrade >= 80) {
+        letterGrade = "B";
+    } else if (courseGrade >= 70) {
+        letterGrade = "C";
+    } else if (courseGrade >= 60) {
+        letterGrade = "D";
+    } else {
+        letterGrade = "E";
+    }
+
+
+    alert(`Your letter grade is: ${letterGrade}`);
+} else {
+    alert("Sorry, you failed the course.");
+}

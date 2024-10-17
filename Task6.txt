@@ -1,0 +1,12 @@
+function printSlices(word) {
+    for (let i = 1; i < word.length; i++) {
+      
+        const part1 = word.slice(0, i);
+        const part2 = word.slice(i);
+        console.log(part1 + '_' + part2);
+    }
+}
+
+
+const word = "SITE";
+printSlices(word);
