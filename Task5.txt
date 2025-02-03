@@ -1,0 +1,14 @@
+function areAnagrams(str1, str2) {
+
+    const normalize = str => str.replace(/[^a-zA-Z]/g, '').toLowerCase();
+    
+  
+    return normalize(str1).split('').sort().join('') === normalize(str2).split('').sort().join('');
+}
+
+
+const string1 = "Listen";
+const string2 = "Silent";
+const result = areAnagrams(string1, string2);
+
+console.log(result);  
